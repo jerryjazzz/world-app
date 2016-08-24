@@ -1,4 +1,4 @@
-# Hybrid App (FE) for connecting people in cities.
+## Hybrid App (FE) for connecting people in cities.
 
 ### Web Repository built using <b>Ionic 1/AngularJS 1</b>.
 
@@ -10,7 +10,7 @@
 * Education<br>
 * Forum<br>
 * General<br>
-* Tax<br>
+* Taxes<br>
 * Transportation<br>
 * Visas<br>
 
