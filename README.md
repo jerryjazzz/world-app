@@ -1,4 +1,4 @@
-# Hybrid Application for connecting places and people
+# Hybrid App for connecting people and cities.
 
 Web Repository built using <b>Ionic 1/AngularJS 1</b>.
 
