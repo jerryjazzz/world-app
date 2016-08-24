@@ -1,4 +1,4 @@
-# Hybrid App for connecting people and cities.
+# Hybrid App (Front End) for connecting people in cities.
 
 Web Repository built using <b>Ionic 1/AngularJS 1</b>.
 
