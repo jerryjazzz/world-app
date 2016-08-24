@@ -1,0 +1,17 @@
+<!-- climate -->
+
+<!-- this content will be injected -->
+  <ion-view view-title="Climate in {{ currentUser.city }}"><ion-content>
+    <div class="card">
+      <ion-item><h3>{{currentUser.city}}</h3>
+      <h5><weather-icon icon="current.icon" id="current-icon"></weather-icon> {{current.currently.summary}}</h5></ion-item>
+      <ion-item>The temperature now is <span class="large"> {{ current.currently.temperature | number:0}}&deg; C</span></ion-item>
+      <ion-item ng-repeat="page in pages">
+             <div ng-bind-html="page.extract" class="item item-text-wrap" ellipsis></div>
+      </ion-item>
+
+      <ion-item ng-if="description">
+             <div ng-bind-html="description" class="item item-text-wrap" ellipsis></div>
+      </ion-item>
+    </div>
+  </ion-content></ion-view>

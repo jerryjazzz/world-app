@@ -1,0 +1,17 @@
+<!-- General -->
+
+<!-- this content will be injected -->
+   <ion-view view-title="Review from {{ autor }}"><ion-content>
+    <div class="card">
+
+      <ion-list>
+          <p>Review of: {{ currentUser.presentation }}</p>
+          <p>Area: {{ area }}</p>
+          <p>Autor: {{ autor }}</p>
+          <p>{{ content }}</p>
+          <rating ng-model="rate" max="max"></rating>
+          <p>{{ date }} (number of days from now)</p>
+      </ion-list>
+
+    </div>
+  </ion-content></ion-view>

@@ -1,0 +1,44 @@
+<!-- account / profile -->
+
+<!-- this content will be injected -->
+      <ion-view view-title="Edit Profile"><ion-content>
+        <div class="list list-inset">
+           <label class="item item-input">
+              <span class="input-label">Name</span>
+              <input type="text" name="name" id="name_id" ng-model:"account.name">
+           </label>
+
+           <label class="item item-input">
+              <span class="input-label">Website</span>
+              <input type="text" name="website" id="website_id" ng-model:"account.website">
+           </label>
+
+           <label class="item textarea">
+              <span class="input-label">Description</span>
+              <input type="text" name="subject" id="subject_id">
+              <textarea name="description" id="description_id" ng-model="account.description"></textarea>
+           </label>
+
+           <label class="item item-input">
+              <span class="input-label">Email</span>
+              <input type="email" name="email" id="email_id" ng-model:"account.email">
+           </label>
+
+           <label class="item item-input">
+              <span class="input-label">Phone</span>
+              <input type="tel" name="phone" id="phone_id" ng-model:"account.phone">
+           </label>
+
+           <label class="item item-input item-select">
+              <span class="input-label">Sex</span>
+      			  <select name="sex" id="sex_id" ng-model:"account.sex">
+      			      <option>Male</option>
+      			      <option selected>Female</option>
+      			  </select>
+           </label>
+
+           <button class="button button-block button-stable">
+              Edit Profile
+           </button>
+        </div>
+      </ion-content></ion-view>

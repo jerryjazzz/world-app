@@ -1,0 +1,31 @@
+<!-- contact  -->
+
+<!-- this content will be injected -->
+      <ion-view view-title="Contact"><ion-content>
+         <div class="list list-inset">
+           <label class="item item-input">
+              <span class="input-label">Name</span>
+              <input type="text" name="name" id="name_id" ng-model:"contact.name">
+           </label>
+
+           <label class="item item-input">
+              <span class="input-label">Email</span>
+              <input type="email" name="email" id="email_id" ng-model:"contact.email">
+           </label>
+
+           <label class="item item-input">
+              <span class="input-label">Subject</span>
+              <input type="text" name="subject" id="subject_id" ng-model="contact.subject">
+           </label>
+
+           <label class="item textarea">
+              <span class="input-label">Message</span>
+              <input type="text" name="subject" id="subject_id">
+              <textarea name="message" id="message_id" ng-model="contact.message"></textarea>
+           </label>
+
+           <button class="button button-block button-stable">
+              Contact
+           </button>
+         </div>
+       </ion-content></ion-view>

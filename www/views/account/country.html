@@ -1,0 +1,40 @@
+<!-- account/country -->
+
+<!-- this content will be injected -->
+      <ion-view view-title="Profile Information"><ion-content>
+
+        <div class="list list-inset">
+           This is a one time step:
+        </div>
+
+        <div class="list list-inset">
+          <form name="countryForm"
+                method="post"
+                ng-controller="countryController"
+                ng-submit="country(mycountries)">
+
+             <label class="item item-input">
+                <span class="input-label">Country I was born:</span>
+                <angucomplete id="country_born" placeholder="Ex: Venezuela" pause="100" selectedobject="mycountries.born" localdata="countries" searchfields="name" titlefield="name" minlength="1" inputclass="form-control form-control-small" matchclass="highlight"/>
+             </label>
+            
+             <div ng-repeat="mycountrieslived in mycountrieslivedlist">
+                <label class="item item-input">
+                        <span class="input-label">Country I have lived (optional):</span>
+                        <angucomplete id="country_lived" placeholder="Ex: Chile" pause="100" selectedobject="mycountrieslived.lived" localdata="countries" searchfields="name" titlefield="name" minlength="1" matchclass="highlight"/>
+                </label>
+             </div><!--button type="button" class="button ion-plus-circled" ng-click="addlived()"></button-->
+
+             <div ng-repeat="mycountrieswished in mycountrieswishedlist">
+                <label class="item item-input">
+                        <span class="input-label">Country I would like to live:</span>
+                        <angucomplete id="country_wish" placeholder="Ex: Australia" pause="100" selectedobject="mycountrieswished.wish" localdata="countries" searchfields="name" titlefield="name" minlength="1" matchclass="highlight"/>
+                </label>
+             </div><!--button type="button" class="button ion-plus-circled" ng-click="addwish()"></button-->
+
+             <button type="submit" class="button button-block button-stable">
+                Submit
+             </button>
+           </form>
+        </div>
+      </ion-content></ion-view>

@@ -1,0 +1,22 @@
+<!-- visa -->
+
+<!-- this content will be injected -->
+   <ion-view view-title="Visas"><ion-content>
+    <div class="card">
+      <div class="item item-divider">
+        Visa policy of {{ currentUser.country }}
+      </div>
+
+      <ion-item ng-repeat="visa in visas">
+             <div ng-bind-html="visa.extract" class="item item-text-wrap" ellipsis></div>
+      </ion-item>
+
+      <ion-item>
+          <div class="item item-text-wrap"><a ng-href="{{linkvisa}}" target="_blank">{{textvisa}}</a></div>
+      </ion-item>
+
+      <ion-item ng-if="thevisas">
+             <div ng-bind-html="thevisas" class="item item-text-wrap" ellipsis></div>
+      </ion-item>
+    </div>
+  </ion-content></ion-view>

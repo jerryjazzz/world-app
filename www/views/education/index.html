@@ -1,0 +1,36 @@
+<!-- education -->
+
+<!-- this content will be injected -->
+  <ion-view view-title="Education"><ion-content>
+
+  <!-- This is from angular charts directive -->
+<!--canvas id="line" class="chart chart-line" data="data" labels="labels" legend="true" series="series" click="onClick"></canvas-->
+
+    <div class="card">
+      <div class="item item-divider">
+        Education in {{ currentUser.presentation }}
+      </div>
+      
+       <!--map zoom="18" center="{{ currentUser.edu_lat }},{{ currentUser.edu_long }}" map-type-id="MapTypeId.HYBRID" tilt="45"><street-view-panorama container="streetview"></street-view-panorama></map-->
+       <!--div id="streetview"></div--> 
+
+      <map zoom="20" center="{{ currentUser.edu_lat }},{{ currentUser.edu_long }}" >
+           <marker position="{{ currentUser.edu_lat }},{{ currentUser.edu_long }}"></marker>
+           <street-view-panorama
+             click-to-go="false"
+             disable-default-u-i="false"
+             disable-double-click-zoom="false"
+             position="{{ currentUser.edu_lat }},{{ currentUser.edu_long }}"
+             pov="{heading:90, pitch: 0}"
+             scrollwheel="false"
+             enable-close-button="true"
+             visible="true">
+           </street-view-panorama>
+      </map>
+
+      <ion-item ng-if="theschools">
+             <div ng-bind-html="theschools" class="item item-text-wrap"></div>
+      </ion-item>
+
+    </div>
+  </ion-content></ion-view>

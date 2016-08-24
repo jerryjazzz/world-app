@@ -1,0 +1,33 @@
+<!-- account/login -->
+
+<!-- this content will be injected -->
+      <ion-view view-title="Login"><ion-content>
+        <div class="item item-image">
+            <img src="img/logo200x200.png" >
+        </div>
+
+        <iframe src="/views/account/sink.html" name="sink"
+        style="display:none"></iframe>
+
+        <div class="list list-inset">
+          <form name="loginForm"
+                action="sink.html" target="sink" method="post"
+                ng-controller="LoginController"
+                ng-submit="login(credentials)"
+                novalidate form-autofill-fix>
+             <label class="item item-input">
+                <span class="input-label">Email</span>
+                <input type="email" id="username" ng-model:"credentials.username">
+             </label>
+
+             <label class="item item-input">
+                <span class="input-label">Password</span>
+                <input type="password" id="password" ng-model:"credentials.password">
+             </label>
+
+             <button type="submit" class="button button-block button-stable">
+                Login
+             </button>
+           </form>
+        </div>
+      </ion-content></ion-view>

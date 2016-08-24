@@ -1,0 +1,18 @@
+<!-- culture (expact living) -->
+
+<!-- this content will be injected -->
+   <ion-view view-title="Culture in {{ currentUser.presentation }}"><ion-content>
+
+     <map zoom="18" center="{{ currentUser.cult_lat }},{{ currentUser.cult_long }}" map-type-id="MapTypeId.HYBRID"><street-view-panorama container="streetview"></street-view-panorama></map>
+     <!--div id="streetview"></div-->
+
+    <div class="card">
+      <ion-item ng-repeat="cul in culs">
+             <div ng-bind-html="cul.extract" class="item item-text-wrap" ellipsis></div>
+      </ion-item>
+
+      <ion-item ng-if="culture">
+             <div ng-bind-html="culture" class="item item-text-wrap" ellipsis></div>
+      </ion-item>
+    </div>
+   </ion-content></ion-view>

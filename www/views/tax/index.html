@@ -1,0 +1,38 @@
+<!-- tax -->
+
+<!-- this content will be injected -->
+   <ion-view view-title="Taxes"><ion-content>
+    <div class="card">
+      <div class="item item-divider">
+        Taxation in {{ currentUser.country }}
+      </div>
+
+      <ion-item>
+        <div class="row">
+          <div class="col .col-100 note">Approximate taxes in percentage</div>
+        </div>
+        <div class="row">
+          <div class="col tabletitle" ng-if="corp">Corp</div>
+          <div class="col tabletitle" ng-if="min">Min</div>
+          <div class="col tabletitle" ng-if="max">Max</div>
+          <div class="col tabletitle" ng-if="pay">Payroll</div>
+          <div class="col tabletitle" ng-if="vat">Sales</div>
+        </div>
+        <div class="row">
+          <div class="col" ng-if="corp">{{corp}}</div>
+          <div class="col" ng-if="min">{{min}}</div>
+          <div class="col" ng-if="max">{{max}}</div>
+          <div class="col" ng-if="pay">{{pay}}</div>
+          <div class="col" ng-if="vat">{{vat}}</div>
+        </div>
+      </ion-item>
+
+      <ion-item ng-repeat="tax in taxs">
+             <div ng-bind-html="tax.extract" class="item item-text-wrap" ellipsis></div>
+      </ion-item>
+
+      <ion-item ng-if="taxes">
+             <div ng-bind-html="taxes" class="item item-text-wrap" ellipsis></div>
+      </ion-item>
+    </div>
+  </ion-content></ion-view>

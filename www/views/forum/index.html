@@ -1,0 +1,17 @@
+<!-- visa -->
+
+<!-- this content will be injected -->
+   <ion-view view-title="Forum"><ion-content>
+    <div class="card">
+      <div class="item item-divider">
+        Forum of {{ currentUser.city }}
+      </div>
+
+      <ion-list>
+        <ion-item ng-repeat="question in questions">
+          <a ng-href="#/app/chat?id={{ question.question_id }}">{{ question.question }}</a>
+        </ion-item>
+      </ion-list>
+
+    </div>
+  </ion-content></ion-view>

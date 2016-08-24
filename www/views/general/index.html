@@ -1,0 +1,23 @@
+<!-- General -->
+
+<!-- this content will be injected -->
+   <ion-view view-title="{{ currentUser.presentation }}"><ion-content>
+    <map center="{{ currentUser.latitude }},{{ currentUser.longitude }}" zoom="8">
+      <traffic-layer></traffic-layer>
+    </map>
+    <div class="card">
+
+      <div class="item item-text-wrap">
+        {{ message }}
+      </div>
+      
+      <ion-list>
+        <ion-item ng-repeat="review in reviews">
+          <a ng-href="#/app/review/{{ review.review_id }}">{{ review.content }}</a>
+          <rating ng-model="review.rate" max="review.max"></rating>
+          <p>Reviewed on {{ review.date }}</p>
+        </ion-item>
+      </ion-list>
+
+    </div>
+  </ion-content></ion-view>

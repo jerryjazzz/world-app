@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html ng-app="expats">
+  <head>
+    <meta charset="utf-8">
+    <title>App</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <link href="/lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <!-- Ionic JS and the Ionic AngularJS extensions: Ionic comes with ngAnimate and ngSanitize-->
+    <!-- Angular modules you'll need to include them from the lib/js/angular directory -->
+    <script src="//maps.google.com/maps/api/js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/lib/moment/index.js"></script>
+    <script src="/lib/autolinker/index.js"></script>
+    <script src="/lib/chartjs/Chart.js"></script>
+    <script src="/lib/ionic/js/ionic.bundle.js"></script>
+    <script src="/lib/angular/angular-touch.min.js"></script>
+    <script src="/lib/autoellipsis/index.js"></script>
+    <script src="/javascript/directives/maps/ng-map.js"></script>
+    <!--<script src="/lib/angular/angular-cookies.min.js"></script>-->
+    <!--<script src="/lib/angular/angular-route.min.js"></script>-->
+
+    <!-- cordova script: NOT included in developement, but when running or emulating your app. -->
+    <script src="/javascript/js/cordova.js"></script>
+
+    <!-- first all the constants js -->
+    <script src="/javascript/js/constants.js"></script>
+
+    <!-- My service's folder -->
+    <script src="/javascript/services/Weather.js"></script>
+    <script src="/javascript/services/Session.js"></script>
+    <script src="/javascript/services/AuthResolver.js"></script>
+    <script src="/javascript/services/AuthService.js"></script>
+    <script src="/javascript/services/AuthInterceptor.js"></script>
+
+    <!-- My controller's folder -->
+    <script src="/javascript/controllers/LoginController.js"></script>
+    <script src="/javascript/controllers/ApplicationController.js"></script>
+    <script src="/javascript/controllers/accountController.js"></script>
+    <script src="/javascript/controllers/countryController.js"></script>
+    <script src="/javascript/controllers/aboutController.js"></script>
+    <script src="/javascript/controllers/contactController.js"></script>
+    <script src="/javascript/controllers/forumController.js"></script>
+    <script src="/javascript/controllers/chatController.js"></script>
+    <script src="/javascript/controllers/educationController.js"></script>
+    <script src="/javascript/controllers/cultureController.js"></script>
+    <script src="/javascript/controllers/transportationController.js"></script>
+    <script src="/javascript/controllers/visaController.js"></script>
+    <script src="/javascript/controllers/taxController.js"></script>
+    <script src="javascript/controllers/climateController.js"></script>
+    <script src="javascript/controllers/generalController.js"></script>
+    <script src="javascript/controllers/reviewController.js"></script>
+    <script src="javascript/controllers/RatingController.js"></script>
+
+    <!-- My directive's folder -->
+    <script src="/javascript/directives/formAutofillFix.js"></script>
+    <script src="/javascript/directives/loginDialog.js"></script>
+    <script src="/javascript/directives/angucomplete.js"></script>
+    <script src="/javascript/directives/angular-chart.js"></script>
+    <script src="/javascript/directives/angular-moment.js"></script>
+    <script src="/javascript/directives/rating.js"></script>
+    <script src="/javascript/directives/ellipsis.js"></script>
+
+    <!-- your app's js -->
+    <script src="/javascript/js/app.js"></script>
+    
+  </head>
+  <body ng-controller="ApplicationController">
+
+      <!-- header -->
+      <ion-nav-bar class="bar-positive">
+      </ion-nav-bar>
+
+      <!-- delete: WHO ARE YOU? 
+      <div>Role: {{currentUser.role}} - ID: {{currentUser.id}} - Authid: {{currentUser.authid}}</div>-->
+
+      <!-- content -->
+      <!-- this is where content will be injected -->
+      <ion-nav-view></ion-nav-view>
+
+      <!-- footer -->
+      <ion-footer-bar class="bar-light">
+        <h2 class="title">Empresa &copy; 2015</h2>
+      </ion-footer-bar>
+      
+  <!--div login-dialog ng-if="!isLoginPage"></div-->
+  </body>
+</html>

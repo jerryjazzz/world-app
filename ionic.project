@@ -1,0 +1,14 @@
+{
+  "name": "expats",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/apis",
+      "proxyUrl": "http://webproadmin.com/apis"
+    },
+    {
+      "path": "/wikipedia",
+      "proxyUrl": "http://en.wikipedia.org/w/api.php?"
+    }
+  ]
+}

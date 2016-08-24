@@ -1,0 +1,380 @@
+/* Empty. Add your own CSS if you like */
+
+.form-control {
+    outline: 0;
+    border-color: #ECECEC;
+    border-style: solid;
+    border-width: 1px;
+    width: 95%;
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.angucomplete-holder {
+    position: relative;
+}
+
+.angucomplete-dropdown {
+    border-color: #ececec;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    width: 250px;
+    padding: 6px;
+    cursor: pointer;
+    z-index: 9999;
+    position: absolute;
+    /*top: 32px;
+    left: 0px;
+    */
+    margin-top: -6px;
+    background-color: #ffffff;
+}
+
+.angucomplete-searching {
+    color: #acacac;
+    font-size: 14px;
+}
+
+.angucomplete-description {
+    font-size: 14px;
+}
+
+.angucomplete-row {
+    padding: 5px;
+    color: #000000;
+    margin-bottom: 4px;
+
+}
+
+.angucomplete-selected-row, .angucomplete-row:hover {
+    background-color: lightblue;
+    color: #ffffff;
+}
+
+.angucomplete-image-holder {
+    padding-top: 2px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.angucomplete-image {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    border-color: #ececec;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.angucomplete-image-default {
+    /* Add your own default image here
+     background-image: url('/assets/default.png');
+    */
+    background-position: center;
+    background-size: contain;
+    height: 34px;
+    width: 34px;
+}
+
+/* Angular Charts starts */
+   
+.chart {
+ margin-left:5px;
+ margin-top:5px;
+}
+
+
+.chart-legend,.bar-legend,.line-legend,.pie-legend,
+.radar-legend,.polararea-legend,.doughnut-legend{
+    list-style-type:none;
+    margin-top:5px;
+    text-align:center;
+}
+
+.chart-legend li,.bar-legend li,.line-legend li,
+.pie-legend li,.radar-legend li,.polararea-legend li,
+.doughnut-legend li{
+    display:inline-block;
+    white-space:nowrap;
+    position:relative;
+    margin-bottom:4px;
+    border-radius:5px;
+    padding:2px 8px 2px 28px;
+    font-size:smaller;cursor:default;
+}
+
+.chart-legend li span,.bar-legend li span,
+.line-legend li span,.pie-legend li span,
+.radar-legend li span,.polararea-legend li span,
+.doughnut-legend li span{
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+    width:20px;
+    height:20px;
+    border-radius:5px
+}
+/*# sourceMappingURL=angular-chart.css.map */
+
+/*# Elastic chat - starts */
+
+/* allows the bar-footer to be elastic /*
+/* optionally set a max-height */
+/* maxlength on the textarea will prevent /*
+/* it from getting too large also */
+.bar-footer {
+  overflow: visible !important;
+}
+
+.bar-footer textarea {
+  resize: none;
+  height: 20px;
+  max-height: 20px;
+}
+
+/* fixes an ios bug bear */
+button.ion-android-send {
+  padding-top: 2px;
+}
+
+/* add this to keep your footer buttons down 
+at the bottom as the textarea resizes */
+.footer-btn-wrap {
+  position: relative; 
+  height: 100%; 
+  width: 50px; 
+  top: 7px;
+}
+
+.footer-btn {
+  position: absolute !important; 
+  bottom: 0;
+}
+
+img.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+}
+
+img.profile-pic.left {
+  left: 10px;
+}
+
+img.profile-pic.right {
+  right: 10px;
+}
+
+.ion-email {
+  float: right;
+  font-size: 32px;
+  vertical-align: middle;
+}
+
+.message {
+  font-size: 14px;
+}
+
+.message-detail {
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.bar.item-input-inset .item-input-wrapper input {
+  width: 100% !important;
+}
+
+.message-wrapper {
+  position: relative;
+}
+
+.message-wrapper:last-child {
+  margin-bottom: 50px;
+}
+
+.chat-bubble {
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px 18px;
+  position: relative;
+  margin: 10px;
+  max-width: 80%;
+}
+
+.chat-bubble:before {
+  content: "\00a0";
+  display: block;
+  height: 16px;
+  width: 9px;
+  position: absolute;
+  bottom: -7.5px;
+}
+
+.chat-bubble.left {
+  background-color: #e6e5eb;
+  float: left;
+  margin-left: 55px;
+}
+
+.chat-bubble.left:before {
+  background-color: #e6e5eb;
+  left: 10px;
+  -webkit-transform: rotate(70deg) skew(5deg);
+}
+
+.chat-bubble.right {
+  background-color: #158ffe;
+  color: #fff;
+  float: right;
+  margin-right: 55px;
+}
+
+.chat-bubble.right:before {
+  background-color: #158ffe;
+  right: 10px;
+  -webkit-transform: rotate(118deg) skew(-5deg);
+}
+
+.chat-bubble.right a.autolinker {
+  color: #fff;
+  font-weight: bold;
+}
+
+.user-messages-top-icon {
+  font-size: 28px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -3px;
+  right: 5px;
+}
+
+.msg-header-username {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -3px;
+}
+
+.item-input, .item-input-wrapper {
+  background-color: #f4f4f4 !important;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.cf {
+  clear: both !important;
+}
+
+a.autolinker {
+  color: #3b88c3;
+  text-decoration: none;
+}
+
+/* loading */
+.loader-center {
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.loader .ion-loading-c {
+  font-size: 64px;
+}
+/*# Elastic chat - ends */
+
+/*# Rating - starts */
+ul.rating li {
+  display: inline;
+  border: 0px;
+  background: none;
+  padding: 5px 10px;
+}
+ul.rating li i {
+  font-size: 30px;
+}
+/*# Rating - ends */
+
+
+/*.item.item-text-wrap.truncate {
+    max-height:250px;
+}*/
+
+.wrapper {
+  border: 2px solid #000;
+  line-height: 20px;
+  width: 676px;
+}
+      
+.trunk8-fill {
+  color: #f00;
+  font-weight: bold;
+}
+
+/*for google maps*/
+map, div[map] {display:block !important; height: 300px;}
+#streetview {display:inline-block !important;width:45%;height: 300px}
+
+/*for the climate section*/
+.large {
+  font-size: 25px;
+    speak: none;
+    font-style: normal;
+    color: red;
+   
+}
+
+.rankedtext {
+  padding-bottom: 3px;
+}
+
+.rankedtext.title {
+  padding-top:2px;
+  font-size: 16px;
+  background-color:#999;
+  color:#fff;
+}
+
+.tabletitle {
+  font-weight: 600;
+}
+
+.note {
+  font-size: 11px;
+}
