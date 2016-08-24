@@ -1,6 +1,18 @@
-# Hybrid App (Front End) for connecting people in cities.
+# Hybrid App (FE) for connecting people in cities.
 
-Web Repository built using <b>Ionic 1/AngularJS 1</b>.
+### Web Repository built using <b>Ionic 1/AngularJS 1</b>.
+
+## Modules:
+
+* Account<br>
+* Climate<br>
+* Culture<br>
+* Education<br>
+* Forum<br>
+* General<br>
+* Tax<br>
+* Transportation<br>
+* Visas<br>
 
 ## Environment Information:
 
